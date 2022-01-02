@@ -1,0 +1,126 @@
+:root {
+    --logo-size: 44px;
+    --nav-height: 66px;
+}
+
+body {
+    font-family: system-ui, -apple-system, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
+}
+
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+nav.top-menu {
+    height: var(--nav-height);
+    margin-bottom: calc(0px - var(--nav-height));
+    color: #fff;
+    /* background-color: #5D576B; */
+    font-family: Cairo, sans-serif;
+}
+
+.top-menu .inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.top-menu .left, .top-menu .right {
+    display: inline-flex;
+    align-items: center;
+    line-height: var(--nav-height);
+}
+
+.top-menu .right {
+    text-align: right;
+}
+
+.top-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.top-menu li {
+    display: inline-block;
+    margin-right: 20px;
+    /* text-transform: uppercase; */
+}
+
+.top-menu li a {
+    color: #ffffff98;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.top-menu li a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.top-menu .logo-container {
+    width: var(--logo-size);
+    height: var(--logo-size);
+    background-color: #403d4a;
+    position: relative;
+    border-radius: 4px;
+    margin-right: 15px;
+}
+
+.top-menu .logo-container svg {
+    width: calc(var(--logo-size) * 0.6);
+    height: calc(var(--logo-size) * 0.6);
+    fill: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.top-menu h2 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 25px;
+}
+
+.top-menu .social-icon {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    margin-left: auto;
+}
+
+.top-menu .social-icon svg {
+    width: 32px;
+    height: 32px;
+    fill: #ffffff98;
+    transition: 0.3s;
+}
+
+.top-menu .social-icon:hover svg {
+    fill: #fff;
+}
+
+header {
+    height: calc(350px + var(--nav-height));
+    padding-top: var(--nav-height);
+    /* background-color: #5D576B; */
+    background-image: linear-gradient(#5D576B, #8c8994);
+}
+
+header .inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.shared-icon {
+    max-width: 100px;
+    max-height: 100px;
+    position: absolute;
+    left: -200px;
+    top: -200px;
+}
