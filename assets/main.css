@@ -1,3 +1,10 @@
+/*
+Telegram SMS Promote Homepage CSS
+Designed & coded by tcdw (https://github.com/tcdw)
+
+ver 20220103a
+*/
+
 :root {
     --logo-size: 44px;
     --nav-height: 66px;
@@ -5,7 +12,7 @@
 }
 
 body {
-    font-family: system-ui, -apple-system, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
+    font-family: Cairo, system-ui, -apple-system, "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
 }
 
 .container {
@@ -17,8 +24,6 @@ nav.top-menu {
     height: var(--nav-height);
     margin-bottom: calc(0px - var(--nav-height));
     color: #fff;
-    /* background-color: #5D576B; */
-    font-family: Cairo, sans-serif;
 }
 
 .top-menu .inner {
@@ -109,13 +114,29 @@ header {
     height: calc(var(--header-height) + var(--nav-height));
     padding-top: var(--nav-height);
     /* background-color: #5D576B; */
-    background-image: linear-gradient(#5D576B, #8c8994);
+    background-image: linear-gradient(#5D576B, #aba9b1);
 }
 
 header .inner {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 420px;
     grid-template-rows: 1fr;
+}
+
+header .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+}
+
+header h2 {
+    font-size: 30px;
+}
+
+header .description {
+    font-size: 18px;
+    line-height: 24px;
 }
 
 header .right {
@@ -128,6 +149,31 @@ header .right img {
     height: 350px;
     right: 50px;
     bottom: 0;
+}
+
+.features .inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0 30px;
+}
+
+.features .cell {
+    padding: 35px 0;
+}
+
+.features h3 {
+    font-size: 22px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.features p {
+    margin: 0;
+    font-size: 18px;
+    line-height: 27px;
 }
 
 .shared-icon {
