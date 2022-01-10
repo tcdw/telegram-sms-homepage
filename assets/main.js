@@ -66,4 +66,10 @@
     overlay.ariaHidden = true;
     overlay.addEventListener('click', closeMobileMenuEvent);
     document.body.appendChild(overlay);
+
+    console.log(
+        '%cTelegram SMS Homepage%cby tcdw',
+        'padding: 8px 12px; background: #00766c; color: #fff',
+        'padding: 8px 12px; background: #64d8cb; color: #000',
+    )
 })()
